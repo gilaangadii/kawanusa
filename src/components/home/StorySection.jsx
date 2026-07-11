@@ -1,68 +1,78 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+import imgTimunMas from '../../assets/images/Cerita Rakyat/timun-mas.jpg';
+import imgMalinKundang from '../../assets/images/Cerita Rakyat/Malin Kundang.jpg';
+import imgAndeAnde from '../../assets/images/Cerita Rakyat/ande-ande-lumut.png';
+import imgRoro from '../../assets/images/Cerita Rakyat/roro-jonggrang.png';
+import imgBawang from '../../assets/images/Cerita Rakyat/Bawang Merah Bawang Putih.jpg';
+import imgSangkuriang from '../../assets/images/Cerita Rakyat/Sangkuriang.jpg';
+import imgKeongMas from '../../assets/images/Cerita Rakyat/Keong Mas.jpg';
+import imgLutung from '../../assets/images/Cerita Rakyat/Lutung Kasarung.jpg';
+import imgJakaTarub from '../../assets/images/Cerita Rakyat/jaka tarub.jpg';
+
 const stories = [
   {
     title: 'Timun Mas',
     region: 'Jawa Tengah',
     desc: 'Timun Mas adalah cerita rakyat Jawa tentang seorang gadis pemberani bernama Timun Mas yang lahir dari buah mentimun emas. Ia berjuang meloloskan diri dari kejaran raksasa jahat (Buto Ijo)...',
-    img: 'src/assets/images/Cerita Rakyat/timun-mas.jpg',
+    img: imgTimunMas,
     link: '/cerita/timun-mas',
   },
   {
     title: 'Malin Kundang',
     region: 'Sumatera Barat',
     desc: 'Malin Kundang adalah cerita rakyat Minangkabau tentang seorang pemuda yang merantau, menjadi kaya raya, lalu menolak mengakui ibu kandungnya yang miskin karena malu...',
-    img: 'src/assets/images/Cerita Rakyat/Malin Kundang.jpg',
+    img: imgMalinKundang,
     link: '/cerita/malin-kundang',
   },
   {
     title: 'Ande-Ande Lumut',
     region: 'Jawa Timur',
     desc: 'Ande-Ande Lumut adalah cerita rakyat Jawa tentang pangeran yang menyamar sebagai pemuda desa bernama Ande-Ande Lumut untuk mencari pasangan hidup. Ia akhirnya memilih Klenting Kuning...',
-    img: 'src/assets/images/Cerita Rakyat/ande-ande-lumut.png',
+    img: imgAndeAnde,
     link: '/cerita/ande-ande-lumut',
   },
   {
     title: 'Roro Jonggrang',
     region: 'DIY',
     desc: 'Roro Jonggrang adalah cerita rakyat Yogyakarta tentang putri cantik yang meminta syarat mustahil kepada Bandung Bondowoso untuk membangun 1.000 candi dalam satu malam...',
-    img: 'src/assets/images/Cerita Rakyat/roro-jonggrang.png',
+    img: imgRoro,
     link: '/cerita/roro-jonggrang',
   },
   {
     title: 'Bawang Merah Bawang Putih',
     region: 'Jawa Tengah',
     desc: 'Kisah dua saudara tiri dengan sifat yang bertolak belakang. Bawang Putih yang baik hati akhirnya mendapatkan kebahagiaan, sedangkan Bawang Merah yang jahat mendapat ganjaran dari keserakahannya...',
-    img: 'src/assets/images/Cerita Rakyat/Bawang Merah Bawang Putih.jpg',
+    img: imgBawang,
     link: '/cerita/bawang-merah-bawang-putih',
   },
   {
     title: 'Sangkuriang',
     region: 'Jawa Barat',
     desc: 'Legenda asal usul Gunung Tangkuban Perahu di Jawa Barat. Mengisahkan Sangkuriang yang jatuh cinta pada ibu kandungnya sendiri, Dayang Sumbi, dan gagal memenuhi syarat untuk menikahinya...',
-    img: 'src/assets/images/Cerita Rakyat/Sangkuriang.jpg',
+    img: imgSangkuriang,
     link: '/cerita/sangkuriang',
   },
   {
     title: 'Keong Mas',
     region: 'Jawa Timur',
     desc: 'Kisah Putri Candra Kirana yang diubah menjadi keong emas oleh penyihir jahat. Ia dirawat oleh seorang nenek pancing hingga akhirnya kutukannya patah oleh pangeran sejati...',
-    img: 'src/assets/images/Cerita Rakyat/Keong Mas.jpg',
+    img: imgKeongMas,
     link: '/cerita/keong-mas',
   },
   {
     title: 'Lutung Kasarung',
     region: 'Jawa Barat',
     desc: 'Menceritakan perjalanan Putri Purbasari yang dibuang ke hutan. Ia bertemu dengan seekor lutung ajaib yang sebenarnya adalah Pangeran Guruminda dari kahyangan...',
-    img: 'src/assets/images/Cerita Rakyat/Lutung Kasarung.jpg',
+    img: imgLutung,
     link: '/cerita/lutung-kasarung',
   },
   {
     title: 'Jaka Tarub',
     region: 'Jawa Tengah',
     desc: 'Kisah pemuda desa bernama Jaka Tarub yang mencuri selendang seorang bidadari bernama Nawang Wulan yang sedang mandi. Mereka akhirnya menikah, namun rahasia Jaka Tarub terbongkar...',
-    img: 'src/assets/images/Cerita Rakyat/jaka tarub.jpg',
+    img: imgJakaTarub,
     link: '/cerita/jaka-tarub',
   },
 ];

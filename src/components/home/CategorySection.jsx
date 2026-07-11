@@ -1,12 +1,18 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+import imgRumah from '../../../public/assets/images/8a650491307dc556ba7424ccd352366aefbfd994.png';
+import imgTarian from '../../../public/assets/images/ad211fa78ddc1f416fff5acb62e94edaa56ad1dd.png';
+import imgMusik from '../../../public/assets/images/ecf218bd317259d59a16135f12a1554ec8a88d42.png';
+import imgPakaian from '../../../public/assets/images/131e54e1f3ca2f3b3ea4c55ea97ccdba9d207989.png';
+import imgPermainan from '../../../public/assets/images/9fef3461abe24249441142a05513055df1229ae2.png';
+
 const categories = [
-  { name: 'Rumah Adat', image: '/assets/images/8a650491307dc556ba7424ccd352366aefbfd994.png', link: '/jelajah-budaya?filter=rumah-adat' },
-  { name: 'Tarian Adat', image: '/assets/images/ad211fa78ddc1f416fff5acb62e94edaa56ad1dd.png', link: '/jelajah-budaya?filter=tarian-adat' },
-  { name: 'Alat Musik Daerah', image: '/assets/images/ecf218bd317259d59a16135f12a1554ec8a88d42.png', link: '/jelajah-budaya?filter=alat-musik' },
-  { name: 'Pakaian Adat', image: '/assets/images/131e54e1f3ca2f3b3ea4c55ea97ccdba9d207989.png', link: '/jelajah-budaya?filter=pakaian-adat' },
-  { name: 'Permainan Daerah', image: '/assets/images/9fef3461abe24249441142a05513055df1229ae2.png', link: '/jelajah-budaya?filter=permainan-daerah' },
+  { name: 'Rumah Adat', image: imgRumah, link: '/jelajah-budaya?filter=rumah-adat' },
+  { name: 'Tarian Adat', image: imgTarian, link: '/jelajah-budaya?filter=tarian-adat' },
+  { name: 'Alat Musik Daerah', image: imgMusik, link: '/jelajah-budaya?filter=alat-musik' },
+  { name: 'Pakaian Adat', image: imgPakaian, link: '/jelajah-budaya?filter=pakaian-adat' },
+  { name: 'Permainan Daerah', image: imgPermainan, link: '/jelajah-budaya?filter=permainan-daerah' },
 ];
 
 const CategorySection = () => {

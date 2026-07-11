@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion';
 
+import sdg4Img from '../../assets/images/Landing Page/sdgs4.png';
+import sdg11Img from '../../assets/images/Landing Page/sdgs11.png';
+
 const SDGSSupportSection = () => {
   return (
     <section className="relative w-full max-w-[1280px] mx-auto px-6 lg:px-16 pt-8 pb-12 z-10">
@@ -28,13 +31,13 @@ const SDGSSupportSection = () => {
               whileHover={{ scale: 1.05 }}
               className="w-[177px] h-[175px] md:w-[130px] md:h-[130px] shadow-lg rounded-sm overflow-hidden"
             >
-              <img src="src/assets/images/Landing Page/sdgs4.png" alt="SDG 4" className="w-full h-full object-cover" />
+              <img src={sdg4Img} alt="SDG 4" className="w-full h-full object-cover" />
             </motion.div>
             <motion.div 
               whileHover={{ scale: 1.05 }}
               className="w-[177px] h-[175px] md:w-[130px] md:h-[130px] shadow-lg rounded-sm overflow-hidden"
             >
-              <img src="src/assets/images/Landing Page/sdgs11.png" alt="SDG 11" className="w-full h-full object-cover" />
+              <img src={sdg11Img} alt="SDG 11" className="w-full h-full object-cover" />
             </motion.div>
           </div>
 

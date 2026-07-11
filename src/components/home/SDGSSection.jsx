@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
 
 import wayangImg from '../../../public/assets/images/ffc5ced3c1d3c7097a830e2ddd5b6c59b0e511d9.png';
+import img1 from '../../assets/images/Landing Page/04. Harta karun bangsa.png';
+import img2 from '../../assets/images/Landing Page/05. Belajar menghargai keberagaman_.png';
+import img3 from '../../assets/images/Landing Page/06. Menumbuhkan rasa cinta tanah air.png';
+import img4 from '../../assets/images/Landing Page/07. Menjaga warisan leluhur_.png';
 
 const SDGSSection = () => {
   const containerVariants = {
@@ -55,31 +59,28 @@ const SDGSSection = () => {
           
           <motion.div variants={itemVariants} className="bg-white rounded-[20px] border-2 border-[#e6cf4d] w-full max-w-[210px] h-auto aspect-square p-6 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 transition-transform shadow-sm">
              <div className="w-[120px] h-[120px] lg:w-[155px] lg:h-[155px] rounded-full shadow-[10px_0px_7px_0px_rgba(0,0,0,0.3)] bg-white overflow-hidden flex items-center justify-center">
-               <img src="src/assets/images/Landing Page/04. Harta karun bangsa.png" alt="Harta Karun Bangsa" className="w-[85%] h-[85%] object-contain" />
+               <img src={img1} alt="Harta Karun Bangsa" className="w-[85%] h-[85%] object-contain" />
              </div>
              <p className="font-kids-word text-[#492222] text-[18px] lg:text-[20px] text-center leading-[1.2]">Harta Karun<br/>Bangsa</p>
           </motion.div>
 
-          
           <motion.div variants={itemVariants} className="bg-white rounded-[20px] border-2 border-[#e6cf4d] w-full max-w-[210px] h-auto aspect-square p-6 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 transition-transform shadow-sm">
              <div className="w-[120px] h-[120px] lg:w-[155px] lg:h-[155px] rounded-full shadow-[10px_0px_7px_0px_rgba(0,0,0,0.3)] bg-white overflow-hidden flex items-center justify-center">
-               <img src="src/assets/images/Landing Page/05. Belajar menghargai keberagaman_.png" alt="Menghargai keberagaman" className="w-[85%] h-[85%] object-contain" />
+               <img src={img2} alt="Menghargai keberagaman" className="w-[85%] h-[85%] object-contain" />
              </div>
              <p className="font-kids-word text-[#492222] text-[18px] lg:text-[20px] text-center leading-[1.2]">Menghargai<br/>keberagaman</p>
           </motion.div>
 
-          
           <motion.div variants={itemVariants} className="bg-white rounded-[20px] border-2 border-[#e6cf4d] w-full max-w-[210px] h-auto aspect-square p-6 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 transition-transform shadow-sm">
              <div className="w-[120px] h-[120px] lg:w-[155px] lg:h-[155px] rounded-full shadow-[10px_0px_7px_0px_rgba(0,0,0,0.3)] bg-white overflow-hidden flex items-center justify-center">
-               <img src="src/assets/images/Landing Page/06. Menumbuhkan rasa cinta tanah air.png" alt="Mencintai tanah air" className="w-[85%] h-[85%] object-contain" />
+               <img src={img3} alt="Mencintai tanah air" className="w-[85%] h-[85%] object-contain" />
              </div>
              <p className="font-kids-word text-[#492222] text-[16px] lg:text-[18px] text-center leading-[1.2]">Mencintai tanah air<br/>Indonesia</p>
           </motion.div>
 
-          
           <motion.div variants={itemVariants} className="bg-white rounded-[20px] border-2 border-[#e6cf4d] w-full max-w-[210px] h-auto aspect-square p-6 flex flex-col items-center justify-center gap-4 hover:-translate-y-2 transition-transform shadow-sm">
              <div className="w-[120px] h-[120px] lg:w-[155px] lg:h-[155px] rounded-full shadow-[10px_0px_7px_0px_rgba(0,0,0,0.3)] bg-white overflow-hidden flex items-center justify-center">
-               <img src="src/assets/images/Landing Page/07. Menjaga warisan leluhur_.png" alt="Menjaga warisan leluhur" className="w-[85%] h-[85%] object-contain" />
+               <img src={img4} alt="Menjaga warisan leluhur" className="w-[85%] h-[85%] object-contain" />
              </div>
              <p className="font-kids-word text-[#492222] text-[16px] lg:text-[18px] text-center leading-[1.2]">Menjaga warisan<br/>leluhur</p>
           </motion.div>

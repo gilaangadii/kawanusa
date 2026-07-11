@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-singsong: 'Singsong', 'Georgia', serif;
+  --font-kids-word: 'Kids Word', 'Comic Sans MS', cursive;
+  --font-cheese-milky: 'Cheese Milky', 'Comic Sans MS', cursive;
+  --font-inter: 'Inter', 'Arial', sans-serif;
+
+  --color-primary-dark: #492222;
+  --color-primary: #5c513b;
+  --color-primary-light: #608981;
+  --color-bg-light: #f9f0dc;
+  --color-bg-alt: #f4e3bd;
+  --color-accent-red: #860404;
+  --color-accent-red-dark: #4a2222;
+  --color-accent-orange: #c55428;
+  --color-accent-yellow: #e6cf4d;
+}
+
+@font-face {
+  font-family: 'Singsong';
+  src: url('/assets/font/Singsong.otf') format('opentype'), local('Georgia');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kids Word';
+  src: url('/assets/font/Kids%20Word.otf') format('opentype'), local('Comic Sans MS');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cheese Milky';
+  src: url('/assets/font/Cheese%20Milky.otf') format('opentype'), local('Comic Sans MS');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), local('Arial');
+  font-weight: normal;
+  font-style: normal;
+}

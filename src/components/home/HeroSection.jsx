@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+import heroBg from '../../../public/assets/images/2611dfe0fb2331333e152fc368388f3145e9d240.png';
+import gatotImg from '../../assets/images/Landing Page/Gatot.png';
+import kemasImg from '../../assets/images/Landing Page/Kemas.png';
+
 const HeroSection = () => {
   return (
     <section className="relative w-full min-h-[700px] lg:min-h-[850px] overflow-hidden bg-[#f9f0dc] pt-[80px]">
@@ -12,14 +16,13 @@ const HeroSection = () => {
         className="absolute inset-0 pointer-events-none"
       >
         <img 
-          src="/assets/images/2611dfe0fb2331333e152fc368388f3145e9d240.png" 
+          src={heroBg} 
           alt="Desain Background" 
           className="w-full h-full object-cover opacity-90 scale-105"
         />
       </motion.div>
 
       <div className="max-w-[1280px] mx-auto px-6 lg:px-16 relative z-10 flex flex-col pt-12 pb-16 h-full">
-        
         
         <div className="w-full lg:w-[45%] flex flex-col gap-6 pt-12 relative z-20">
           <h1 
@@ -50,26 +53,30 @@ const HeroSection = () => {
           </div>
         </div>
 
-        
         <div className="absolute inset-0 pointer-events-none z-10 w-full max-w-[1280px] mx-auto hidden md:block">
           
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.6, type: 'spring', stiffness: 60 }}
-            className="absolute top-[28%] right-[40%] lg:right-[49%] bg-white border-2 border-gray-100 rounded-[20px] rounded-br-none px-4 py-2 lg:px-5 lg:py-2 shadow-lg"
+            className="absolute top-[28%] right-[40%] lg:right-[49%] flex flex-col items-center"
           >
-            <p className="font-cheese-milky text-[#4a2222] text-sm lg:text-base whitespace-nowrap">Hi, aku si Gatot !</p>
+            <div className="bg-white border-2 border-gray-100 rounded-[20px] rounded-br-none px-4 py-2 lg:px-5 lg:py-2 shadow-lg mb-2 relative z-20">
+              <p className="font-cheese-milky text-[#4a2222] text-sm lg:text-base whitespace-nowrap">Hi, aku si Gatot !</p>
+            </div>
+            <img src={gatotImg} alt="Gatot" className="w-[120px] lg:w-[150px] object-contain drop-shadow-lg" />
           </motion.div>
-          
           
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.8, type: 'spring', stiffness: 60 }}
-            className="absolute top-[38%] right-[5%] lg:right-[8%] bg-white border-2 border-gray-100 rounded-[20px] rounded-bl-none px-4 py-2 lg:px-5 lg:py-2 shadow-lg"
+            className="absolute top-[38%] right-[5%] lg:right-[8%] flex flex-col items-center"
           >
-            <p className="font-cheese-milky text-[#4a2222] text-sm lg:text-base whitespace-nowrap">Hi, aku si Kemas !</p>
+            <div className="bg-white border-2 border-gray-100 rounded-[20px] rounded-bl-none px-4 py-2 lg:px-5 lg:py-2 shadow-lg mb-2 relative z-20">
+              <p className="font-cheese-milky text-[#4a2222] text-sm lg:text-base whitespace-nowrap">Hi, aku si Kemas !</p>
+            </div>
+            <img src={kemasImg} alt="Kemas" className="w-[140px] lg:w-[180px] object-contain drop-shadow-lg" />
           </motion.div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 
+import wayangImg from '../../../public/assets/images/ffc5ced3c1d3c7097a830e2ddd5b6c59b0e511d9.png';
+
 const SDGSSection = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -19,7 +21,7 @@ const SDGSSection = () => {
         whileInView={{ opacity: 1, x: 0, rotate: 24.25 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        src="/assets/images/ffc5ced3c1d3c7097a830e2ddd5b6c59b0e511d9.png" 
+        src={wayangImg} 
         alt="Wayang Left" 
         className="absolute left-[-2%] top-[10%] w-[180px] lg:w-[220px] object-contain pointer-events-none z-0 hidden md:block"
       />
@@ -28,7 +30,7 @@ const SDGSSection = () => {
         whileInView={{ opacity: 1, x: 0, rotate: 164.26 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        src="/assets/images/ffc5ced3c1d3c7097a830e2ddd5b6c59b0e511d9.png" 
+        src={wayangImg} 
         alt="Wayang Right" 
         className="absolute right-[-2%] top-[10%] w-[180px] lg:w-[220px] object-contain pointer-events-none z-0 hidden md:block -scale-y-100"
       />

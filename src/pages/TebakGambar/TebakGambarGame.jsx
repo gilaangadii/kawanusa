@@ -100,7 +100,6 @@ export default function TebakGambarGame() {
     const answerName = currentQuestion.correctAnswer.toLowerCase();
     const matchKey = Object.keys(localImages).find(key => 
       key.toLowerCase().includes(answerName) || 
-      
       key.toLowerCase().replace(/[-_]/g, ' ').includes(answerName)
     );
     
@@ -108,15 +107,33 @@ export default function TebakGambarGame() {
       return localImages[matchKey].default;
     }
     
-    
     return currentQuestion.image;
   }, [currentQuestion]);
 
-  if (!currentQuestion) {
-    return <div className="min-h-screen bg-[#fdfaf1] flex items-center justify-center font-cheese-milky text-2xl">Loading...</div>;
+  const categoryTitle = categoryId ? `TEBAK ${categoryId.split('-').join(' ').toUpperCase()}` : 'TEBAK GAMBAR';
+
+  if (allQuestions.length === 0) {
+    return (
+      <div className="min-h-screen bg-[#fdfaf1] flex flex-col items-center justify-center font-jakarta">
+        <Navbar />
+        <main className="flex-grow flex flex-col items-center justify-center">
+          <img src={mascotImg} alt="Mascot" className="w-48 h-48 mb-6" />
+          <h2 className="font-cheese-milky text-4xl text-[#4a2222] mb-4">Segera Hadir!</h2>
+          <p className="text-xl text-gray-600 mb-8 font-medium">Tebak Gambar untuk kategori ini sedang dalam tahap pengembangan.</p>
+          <button 
+            onClick={() => navigate('/games/tebak-gambar')}
+            className="bg-[#c55428] text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-[#a64520] transition-colors"
+          >
+            Kembali
+          </button>
+        </main>
+      </div>
+    );
   }
 
-  const categoryTitle = categoryId ? `TEBAK ${categoryId.split('-').join(' ').toUpperCase()}` : 'TEBAK GAMBAR';
+  if (!currentQuestion && status === 'loading') {
+    return <div className="min-h-screen bg-[#fdfaf1] flex items-center justify-center font-cheese-milky text-2xl">Loading...</div>;
+  }
 
   return (
     <div className="min-h-screen flex flex-col bg-[#fdfaf1] font-jakarta overflow-x-hidden">

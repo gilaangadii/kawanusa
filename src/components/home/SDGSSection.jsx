@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 
-import wayangImg from '../../../public/assets/images/ffc5ced3c1d3c7097a830e2ddd5b6c59b0e511d9.png';
 import img1 from '../../assets/images/Landing Page/04. Harta karun bangsa.png';
 import img2 from '../../assets/images/Landing Page/05. Belajar menghargai keberagaman_.png';
 import img3 from '../../assets/images/Landing Page/06. Menumbuhkan rasa cinta tanah air.png';
@@ -21,20 +20,20 @@ const SDGSSection = () => {
     <section className="relative w-full max-w-[1280px] mx-auto px-6 lg:px-16 pt-20 pb-12">
       
       <motion.img 
-        initial={{ opacity: 0, x: -50, rotate: 0 }}
+        initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0, rotate: 24.25 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        src={wayangImg} 
+        src="/assets/images/ffc5ced3c1d3c7097a830e2ddd5b6c59b0e511d9.png" 
         alt="Wayang Left" 
         className="absolute left-[-2%] top-[10%] w-[180px] lg:w-[220px] object-contain pointer-events-none z-0 hidden md:block"
       />
       <motion.img 
-        initial={{ opacity: 0, x: 50, rotate: 180 }}
+        initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0, rotate: 164.26 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        src={wayangImg} 
+        src="/assets/images/ffc5ced3c1d3c7097a830e2ddd5b6c59b0e511d9.png" 
         alt="Wayang Right" 
         className="absolute right-[-2%] top-[10%] w-[180px] lg:w-[220px] object-contain pointer-events-none z-0 hidden md:block -scale-y-100"
       />
